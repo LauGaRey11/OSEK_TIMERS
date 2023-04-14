@@ -14,6 +14,7 @@
 #include "bits.h"
 #include "NVIC.h"
 #include "GPIO.h"
+#include "PIT.h"
 
 Task_struct_t task_list[3];
 
@@ -48,6 +49,8 @@ int main (void)
 
 	init_RGB();
 	gpio_init();
+	PIT_init();
+
 	while (1){
 		os_init();
 	}

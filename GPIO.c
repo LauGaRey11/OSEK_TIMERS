@@ -2,9 +2,10 @@
  * GPIO.c
  *
  *  Created on: 12 sep 2022
- *      Author: Tahirí Ramos
+ *      Author: Tahirí Ramos & Laura Garcia
  */
 
+#include <PIT.h>
 #include "GPIO.h"
 #include "OSEK.h"
 #include "bits.h"
