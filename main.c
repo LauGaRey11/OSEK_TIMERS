@@ -17,6 +17,32 @@
 
 Task_struct_t task_list[3];
 
+void task_A (void)
+{
+	set_color(RED);
+	delay(2000000);
+	activate_task(task_B_ID);
+
+	set_color(RED);
+	delay(2000000);
+}
+
+void task_B (void)
+{
+	//led azul
+	set_color(BLUE);
+	delay(2000000);
+	chained_task (task_C_ID);
+}
+
+void task_C (void)
+{
+	//led verde
+	set_color(GREEN);
+	delay(2000000);
+	terminate_task();
+}
+
 int main (void)
 {
 	//TASK A

@@ -51,10 +51,4 @@ void terminate_task(void);
 
 void scheduler(void);
 
-void task_A (void);
-
-void task_B (void);
-
-void task_C (void);
-
 #endif /* OSEK_H_ */
