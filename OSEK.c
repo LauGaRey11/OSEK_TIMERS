@@ -8,8 +8,12 @@
 
 #include "OSEK.h"
 #include "LED_RGB.h"
+#include "PIT.h"
 
-extern Task_struct_t task_list[3];
+
+Alarm_struct_t alarm_time[3];
+Task_struct_t task_list[3];
+
 uint8_t destino;
 uint32_t *contexto_temp;
 

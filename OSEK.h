@@ -41,6 +41,14 @@ typedef struct
 	uint32_t CONTEXTO;
 }Task_struct_t;
 
+typedef struct
+{
+	uint32_t SET_ALARM;
+	uint32_t INITIAL_TIME;
+	uint32_t RELOAD;
+
+}Alarm_struct_t;
+
 void os_init();
 
 void activate_task(uint8_t);
